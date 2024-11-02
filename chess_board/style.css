@@ -1,0 +1,98 @@
+h1{
+   color: burlywood;
+   background-color: #321d07;
+}
+
+
+
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 800px;
+   margin: 0;
+   background-color: #f4f4f4;
+}
+
+.chess-container {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.board {
+   border: 3px solid #321d07;
+   border-width: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   width: 640px;
+   height: 640px;
+}
+
+.board div {
+   height: 80px;
+   width: 80px;
+}
+
+.box {
+   background-color: #fff;
+}
+
+.box-black {
+   background-color: #0a0806;
+}
+
+.numbers-right, .numbers-left, .letters-top, .letters-bottom {
+   display: flex;
+   justify-content: center;
+   font-weight: bold;
+   font-size: 18px;
+   color: #f4f4f4;
+}
+
+.numbers-left {
+   position: absolute;
+   left: 10px;
+   flex-direction: column;
+   height: 640px;
+}
+
+.numbers-left div {
+   display: flex;
+   align-items: self-end;
+   height: 80px;
+}
+
+.numbers-right {
+   position: absolute;
+   right: 10px;
+   flex-direction: column-reverse;
+   height: 640px;
+}
+
+.numbers-right div {
+   display: flex;
+   align-items: center;
+   height: 80px;
+}
+
+
+
+.letters-top, .letters-bottom {
+   width: 640px;
+   position: absolute;
+}
+
+.letters-top {
+   top: 10px;
+}
+
+.letters-bottom {
+   bottom: 10px;
+}
+
+.letters-top div, .letters-bottom div {
+   flex: 1;
+   text-align: center;
+}
